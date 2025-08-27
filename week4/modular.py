@@ -312,3 +312,53 @@ def outer():
 outer()
 
 # Watch the output
+
+# Normal function
+def square(x):
+    return x ** 2
+
+# Lambda function
+square_lambda = lambda x: x ** 2
+
+print(square(5))         
+print(square_lambda(5))  
+
+# Watch the output and note the difference
+
+# This one has more that one arguments.
+
+add = lambda a, b: a + b
+print(add(3, 7))  # Output: 10
+
+# Let us lambda to apply the square function to a list
+
+numbers = [1, 2, 3, 4]
+squares = list(map(lambda x: x**2, numbers))
+print(squares)  # Output: [1, 4, 9, 16]
+
+# Lets use lambda to filter even numbers 
+
+numbers = [10, 15, 20, 25, 30]
+evens = list(filter(lambda x: x % 2 == 0, numbers))
+print(evens)  # Output: [10, 20, 30]
+
+
+# Lets use lambda to sort the tuple within a list.
+
+students = [("Ayo", 20), ("Bola", 18), ("Chika", 22)]
+# Sort by age
+sorted_students = sorted(students, key=lambda student: student[1])
+print(sorted_students)
+
+  
+# Output: [('Bola', 18), ('Ayo', 20), ('Chika', 22)]
+
+students_sorted_descending = sorted(students, key=lambda student: student[1], reverse=True)
+print(students_sorted_descending)
+
+# Output: [('Chika', 22), ('Ayo', 20), ('Bola', 18)]
+
+students_sorted_alphabetically = sorted(students, key=lambda student: student[0])
+print(students_sorted_alphabetically)
+
+# Output: [('Ayo', 20), ('Bola', 18), ('Chika', 22)]
