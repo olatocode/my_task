@@ -1,4 +1,4 @@
-BookID,Title,AuthorID,Genre,DateOfPublication,Publisher,ISBN,Language,AvailableCopies,AgeRating
+bookid,title,authorid,genre,dateofpublication,publisher,isbn,language,availablecopies,agerating
 1,The Handmaid's Tale,1,Dystopian Fiction,1985-08-01,McClelland & Stewart,9780771008795,English,3,16+
 2,Cat's Eye,1,Literary Fiction,1988-09-01,McClelland & Stewart,9780771008801,English,2,16+
 3,The Blind Assassin,1,Literary Fiction,2000-09-01,McClelland & Stewart,9780771008818,English,1,18+
